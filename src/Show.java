@@ -13,7 +13,7 @@ public class Show {
         this.listOfActors = new ArrayList<>();
     }
 
-    void addActor(Actor actor) {
+    public void addActor(Actor actor) {
         if (!listOfActors.contains(actor)) {
             listOfActors.add(actor);
             System.out.println("Актёр " + actor.getName() + " " + actor.getSurname() + " добавлен в спектакль.");
@@ -22,7 +22,7 @@ public class Show {
         }
     }
 
-    void replaceActor(Actor newActor, String surnameToReplace) {
+    public void replaceActor(Actor newActor, String surnameToReplace) {
         for (int i = 0; i < listOfActors.size(); i++) {
             if (listOfActors.get(i).getSurname().equals(surnameToReplace)) {
                 listOfActors.remove(i);           // удаляем актёра по индексу
@@ -37,14 +37,14 @@ public class Show {
                 " не найден в спектакле!");
     }
 
-    void printListOfActors() {
+    public void printListOfActors() {
         System.out.println("Список актеров спектакля:");
         for (Actor actor : listOfActors) {
             System.out.println(actor);
         }
     }
 
-    void printDirectorInfo() {
+    public void printDirectorInfo() {
         System.out.println(director);
     }
 }

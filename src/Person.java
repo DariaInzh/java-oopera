@@ -1,7 +1,7 @@
 public class Person {
-    String name;
-    String surname;
-    Gender gender;
+    public String name;
+    public String surname;
+    private Gender gender;
 
     public Person(String name, String surname, Gender gender) {
         this.name = name;
@@ -9,27 +9,27 @@ public class Person {
         this.gender = gender;
     }
 
-    String getName() {
+    public String getName() {
         return name;
     }
 
-    void setName(String name) {
+    public void setName(String name) {
         this.name = name;
     }
 
-    String getSurname() {
+    public String getSurname() {
         return surname;
     }
 
-    void setSurname(String surname) {
+    public void setSurname(String surname) {
         this.surname = surname;
     }
 
-    Gender getGender() {
+    public Gender getGender() {
         return gender;
     }
 
-    void setGender(Gender gender) {
+    public void setGender(Gender gender) {
         this.gender = gender;
     }
 }

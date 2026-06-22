@@ -32,7 +32,7 @@ class Director extends Person {
 
     @Override
     public String toString() {
-        return "Режиссёр: " + name + " " + surname +
-                ", спектаклей поставлено: " + numberOfShows;
+        return "Режиссёр: " + getName() + " " + getSurname() +
+                ", спектаклей поставлено: " + numberOfShows; // get
     }
 }

@@ -1,12 +1,12 @@
 public class Person {
-    public String name;
-    public String surname;
+    private String name;
+    private String surname;
     private Gender gender;
 
     public Person(String name, String surname, Gender gender) {
-        this.name = name;
-        this.surname = surname;
-        this.gender = gender;
+        setName(name);
+        setSurname(surname);
+        setGender(gender);
     }
 
     public String getName() {
@@ -14,7 +14,9 @@ public class Person {
     }
 
     public void setName(String name) {
-        this.name = name;
+        if (name != null) {
+            this.name = name;
+        }
     }
 
     public String getSurname() {
@@ -22,7 +24,9 @@ public class Person {
     }
 
     public void setSurname(String surname) {
-        this.surname = surname;
+        if (surname != null) {
+            this.surname = surname;
+        }
     }
 
     public Gender getGender() {
@@ -30,6 +34,8 @@ public class Person {
     }
 
     public void setGender(Gender gender) {
-        this.gender = gender;
+        if (gender != null) {
+            this.gender = gender;
+        }
     }
 }
